@@ -5,12 +5,13 @@ export default function Product() {
     <h1 className="text-3xl text-[#31546D] font-semibold text-center">All product</h1>
     <div className="h-[1pt] w-[6%] bg-[#f2f2f2] mx-auto mt-2"></div>
 
-    <div className="my-5 flex gap-10 px-28 text-sm">
+    <div className="my-5 flex md:gap-10 text-xs md:text-sm items-center justify-center">
       <div className="flex">
         <label htmlFor="filter" className="text-[#9AB0C0]">Filter: </label>
         <select id="filter" className="font-semibold text-[#31546D]">
           <option value="option1">All Products</option>
-          <option value="option3">None Products</option>
+          <option value="option3">Phone Cases</option>
+          <option value="option3">Accessories</option>
         </select>
       </div>
 
@@ -19,15 +20,12 @@ export default function Product() {
         <select id="sort" className="font-semibold text-[#31546D]">
           <option value="option1">Best Selling</option>
           <option value="option3">Low cost</option>
+          <option value="option3">Most Liked</option>
         </select>
       </div>
     </div>
 
-    <div className="flex justify-center gap-4 flex-wrap w-full px-10">
-      <Item />
-      <Item />
-      <Item />
-      <Item />
+    <div className="flex justify-center gap-4 flex-wrap w-full px-2 md:px-10">
       <Item />
       <Item />
       <Item />

@@ -7,18 +7,18 @@ export default function Featured() {
 
     <div className="relative z-10 flex px-10 items-center justify-center gap-10">
 
-      <div className="text-right flex flex-col items-end w-[40%] gap-4">
+      <div className="text-center md:text-right flex flex-col items-center md:items-end md:w-[40%] gap-2 md:gap-4">
         <div className="text-[#31546D] ">
-          <h1 className="text-2xl uppercase">Best price</h1>
-          <h1 className="text-5xl font-semibold">Agate Phone Grip</h1>
+          <h1 className="text-xl md:text-2xl uppercase">Best price</h1>
+          <h1 className="text-3xl md:text-5xl font-semibold">Agate Phone Grip</h1>
         </div>
 
         <div className="flex items-center gap-4">
-          <p className="line-through text-[#41A0B7]">44.50$</p>
-          <p className="text-[#E35B3E] font-semibold text-5xl">19.50$ </p>
+          <p className="line-through text-[#41A0B7] text-xs md:text-base">44.50$</p>
+          <p className="text-[#E35B3E] font-semibold text-xl md:text-5xl">19.50$ </p>
         </div>
 
-        <p className="text-[#31546D] text-sm">
+        <p className="text-[#31546D] text-xs md:text-sm">
           Pop Rock Crystal grip tops can be swapped with other tops depending on your mood, outfit, nails, phone case, holiday, etc.! Just gently squeeze the sides to remove and swap out with another color or design!
         </p>
 
@@ -28,7 +28,7 @@ export default function Featured() {
       </div>
 
 
-      <div className="w-[450px] h-[450px] flex justify-center items-center" style={{
+      <div className="hidden w-[450px] h-[450px] md:flex justify-center items-center" style={{
         backgroundImage: `url('/Ellipse9.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -39,10 +39,9 @@ export default function Featured() {
           </div>
         </div>
       </div>
-
     </div>
 
-    <div className="absolute -top-72 h-[150%] w-full" style={{
+    <div className="hidden md:block absolute -top-72 h-[150%] w-full" style={{
       backgroundImage: `url('/hs3.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
