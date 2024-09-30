@@ -23,12 +23,12 @@ export default function Navbar() {
       </div>
     </div>
 
-    <div className="md:hidden fixed right-6">
+    <div className="md:hidden absolute right-6">
       <button onClick={toggleMenu}>
         <img src="/hamburger-menu.png" className="size-10 text-white" />
       </button>
 
-      {menu && <div className="fixed uppercase bg-white p-3 shadow-even font-light gap-2 text-[#31546D] right-8 flex flex-col items-center w-32">
+      {menu && <div className="absolute uppercase bg-white p-3 shadow-even font-light gap-2 text-[#31546D] right-10 flex flex-col items-center w-32">
         <p className="">Home</p>
         <p className="">Shop</p>
         <p className="">About Us</p>
